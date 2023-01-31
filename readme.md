@@ -1,5 +1,22 @@
-# Random Name Generator #
+# Random Name Generator
 
-Hi, i have crated an webscraping bot which scrapes name from [Behind the Name](https://www.behindthename.com/) and prints it. i have used bs4 since it doesn't has Fetch/XHR output from the server.
+A Python script that scrapes random names from a website and removes all the numbers and dashes from the name.
 
-Hope you have a good day, happy coding :)
+## Requirements
+
+- `requests` library
+- `bs4` library
+- `re` library
+
+## Steps of Code
+
+- Makes GET request to specified URL
+- Parses response with BeautifulSoup
+- Extracts first and last name from links containing "/name/"
+- Concatenates names to form full name, stored in name variable
+- Removes numbers and dashes from name using re.sub method
+- Prints final result to console
+
+## Notes
+
+This script is for educational purposes only and should not be used for scraping websites without permission.The website's terms of use may prohibit scraping and using the data obtained from the website for commercial purposes.
